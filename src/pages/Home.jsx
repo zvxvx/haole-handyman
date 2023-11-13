@@ -13,7 +13,7 @@ const Home = () => {
 		<>
 			<div
 				id="home"
-				className="max-w-mlg mx-auto bg-green-200 rounded-xl shadow-md overflow-hidden md:max-w-2xl"
+				className="mx-auto bg-green-200 rounded-xl shadow-md overflow-hidden lg:max-w-2xl"
 			>
 				<div className="md:flex">
 					<div className="md:shrink-0">
@@ -25,7 +25,7 @@ const Home = () => {
 						/>
 					</div>
 					<div className="p-8" id="about">
-						<div className="uppercase tracking-wide text-md text-indigo-500 font-semibold">
+						<div className="uppercase tracking-wide text-lg text-green-800 font-bold">
 							About
 						</div>
 						<p>
@@ -40,16 +40,16 @@ const Home = () => {
 							Handyman a call. They complement each other well and look forward
 							to helping you on your next project!
 						</p>
-						<h3 className="uppercase tracking-wide text-md text-indigo-500 font-semibold">
+						<div className="uppercase tracking-wide text-lg text-green-800 font-bold mt-5">
 							Need a quote?
-						</h3>
+						</div>
 						<p>
 							Provide us with your name, a good phone number or email to respond
 							to, and a description of what service you'd like to request. The
 							more information you provide us, the more accurate the quote will
 							be.
 						</p>
-						<button type="button" onClick={requestQuote}>
+						<button type="button" onClick={requestQuote} className="font-bold px-3 py-2 rounded-lg bg-green-100 text-green-800 mt-5">
 							Request Service Quote
 						</button>
 					</div>
