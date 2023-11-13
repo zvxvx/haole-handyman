@@ -16,16 +16,9 @@ function App() {
 				backgroundSize: "cover",
 			}}
 		>
-			<img
-				src={logo}
-				className="mx-auto my-auto w-1/6"
-				id="logo"
-				alt="logo"
-			/>
+			<img src={logo} className="mx-auto my-auto w-1/6" id="logo" alt="logo" />
 			<Navbar />
-			<div
-				className="flex-col max-w-2xl mx-auto rounded-md shadow-xl items-center justify-center border border-green-500 bg-green-200/90 p-8"
-			>
+			<div className="flex-col max-w-2xl mx-auto rounded-md shadow-xl items-center justify-center border border-green-500 bg-green-200/90 p-8">
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/services" element={<Services />} />
