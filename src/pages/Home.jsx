@@ -28,7 +28,7 @@ const Home = () => {
 						<div className="uppercase tracking-wide text-lg text-green-800 font-bold">
 							About
 						</div>
-						<p>
+						<p className="pb-3">
 							Brad, originally from Texas, moved here in 2019 and fell in love
 							with the island life. He cares about providing quality work and
 							customer service. Just as important is his belief in giving fair
