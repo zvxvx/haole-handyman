@@ -1,4 +1,4 @@
-import owners from "../assets/owners.jpg";
+import owners from "../assets/owners.png";
 
 const Home = () => {
 	const requestQuote = (e) => {
@@ -13,46 +13,47 @@ const Home = () => {
 		<>
 			<div
 				id="home"
-				className="mx-auto bg-green-200 rounded-xl shadow-md overflow-hidden lg:max-w-2xl"
+				className="w-1/2 mx-auto bg-green-200 rounded-xl shadow-md flex-col items-center pt-5"
 			>
-				<div className="md:flex">
-					<div className="md:shrink-0">
-						<img
-							className="w-full object-cover md:h-full w-60"
-							src={owners}
-							id="owners"
-							alt="Jadyi and Brad"
-						/>
+				<img
+					className="border-solid border-4 border-black mx-auto my-auto"
+					src={owners}
+					id="owners"
+					alt="Jadyi and Brad"
+          style={{borderRadius:"50%"}}
+				/>
+				<div className="p-8" id="about">
+					<div className="uppercase tracking-wide text-lg text-green-800 font-bold">
+						About
 					</div>
-					<div className="p-8" id="about">
-						<div className="uppercase tracking-wide text-lg text-green-800 font-bold">
-							About
-						</div>
-						<p className="pb-3">
-							Brad, originally from Texas, moved here in 2019 and fell in love
-							with the island life. He cares about providing quality work and
-							customer service. Just as important is his belief in giving fair
-							prices to the residents of O'ahu.
-						</p>
-						<p>
-							His partner, Jaydi, was born on Kaua'i, but was raised on O'ahu.
-							You'll likely hear her voice on the other end when you give Ha'ole
-							Handyman a call. They complement each other well and look forward
-							to helping you on your next project!
-						</p>
-						<div className="uppercase tracking-wide text-lg text-green-800 font-bold mt-5">
-							Need a quote?
-						</div>
-						<p>
-							Provide us with your name, a good phone number or email to respond
-							to, and a description of what service you'd like to request. The
-							more information you provide us, the more accurate the quote will
-							be.
-						</p>
-						<button type="button" onClick={requestQuote} className="font-bold px-3 py-2 rounded-lg bg-green-100 text-green-800 mt-5">
-							Request Service Quote
-						</button>
+					<p className="pb-3">
+						Brad, originally from Texas, moved here in 2019 and fell in love
+						with the island life. He cares about providing quality work and
+						customer service. Just as important is his belief in giving fair
+						prices to the residents of O'ahu.
+					</p>
+					<p>
+						His partner, Jaydi, was born on Kaua'i, but was raised on O'ahu.
+						You'll likely hear her voice on the other end when you give Ha'ole
+						Handyman a call. They complement each other well and look forward to
+						helping you on your next project!
+					</p>
+					<div className="uppercase tracking-wide text-lg text-green-800 font-bold mt-5">
+						Need a quote?
 					</div>
+					<p>
+						Provide us with your name, a good phone number or email to respond
+						to, and a description of what service you'd like to request. The
+						more information you provide us, the more accurate the quote will
+						be.
+					</p>
+					<button
+						type="button"
+						onClick={requestQuote}
+						className="font-bold px-3 py-2 rounded-lg bg-green-100 text-green-800 mt-5"
+					>
+						Request Service Quote
+					</button>
 				</div>
 			</div>
 		</>
