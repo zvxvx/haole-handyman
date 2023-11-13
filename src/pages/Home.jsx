@@ -13,14 +13,13 @@ const Home = () => {
 		<>
 			<div
 				id="home"
-				className="w-1/2 mx-auto bg-green-200 rounded-xl shadow-md flex-col items-center pt-5"
+				className="max-w-2xl mx-auto bg-green-200 rounded-t-xl shadow-md flex-col items-center"
 			>
 				<img
-					className="border-solid border-4 border-black mx-auto my-auto"
+					className="drop-shadow-2xl mx-auto my-auto pt-5"
 					src={owners}
 					id="owners"
 					alt="Jadyi and Brad"
-          style={{borderRadius:"50%"}}
 				/>
 				<div className="p-8" id="about">
 					<div className="uppercase tracking-wide text-lg text-green-800 font-bold">
@@ -50,7 +49,7 @@ const Home = () => {
 					<button
 						type="button"
 						onClick={requestQuote}
-						className="font-bold px-3 py-2 rounded-lg bg-green-100 text-green-800 mt-5"
+						className="font-bold px-3 py-2 rounded-lg bg-green-100 text-green-800 mt-5 mx-auto block"
 					>
 						Request Service Quote
 					</button>

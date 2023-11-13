@@ -7,7 +7,7 @@ import logo from "./assets/logo.png";
 
 function App() {
 	return (
-		<div className="h-screen bg-gradient-to-b from-green-300 to-green-200">
+		<div className="min-h-screen bg-green-300">
 			<img src={logo} className="mx-auto my-auto w-1/6" id="logo" alt="logo" />
 			<Navbar />
 			<div className="mx-auto my-auto">
