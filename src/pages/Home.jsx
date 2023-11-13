@@ -11,17 +11,14 @@ const Home = () => {
 	};
 	return (
 		<>
-			<div
-				id="home"
-				className="max-w-2xl mx-auto bg-green-200 rounded-t-xl shadow-md flex-col items-center"
-			>
+			<div id="home">
 				<img
 					className="drop-shadow-2xl mx-auto my-auto pt-5"
 					src={owners}
 					id="owners"
 					alt="Jadyi and Brad"
 				/>
-				<div className="p-8" id="about">
+				<div id="about">
 					<div className="uppercase tracking-wide text-lg text-green-800 font-bold">
 						About
 					</div>
@@ -49,7 +46,7 @@ const Home = () => {
 					<button
 						type="button"
 						onClick={requestQuote}
-						className="font-bold px-3 py-2 rounded-lg bg-green-100 text-green-800 mt-5 mx-auto block"
+						className="font-bold px-3 py-2 rounded-lg bg-green-100 text-green-800 border border-green-500 shadow-md mt-5 mx-auto block"
 					>
 						Request Service Quote
 					</button>
