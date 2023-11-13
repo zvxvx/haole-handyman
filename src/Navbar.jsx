@@ -6,9 +6,9 @@ const Navbar = () => {
 				<CustomLink to="/">Home</CustomLink>
 				<CustomLink to="/services">Services</CustomLink>
 				<CustomLink to="/testimonials">Testimonials</CustomLink>
-				<Link className="font-bold px-3 py-2 text-slate-800 rounded-lg hover:bg-green-200 hover:text-green-800" to="https://www.instagram.com/haolehandymanllc" target="_blank">
+				<CustomLink to="https://www.instagram.com/haolehandymanllc">
 					Instagram
-				</Link>
+				</CustomLink>
 			</ul>
 		</nav>
 	);
@@ -17,7 +17,13 @@ const Navbar = () => {
 		const resolvedPath = useResolvedPath(to);
 		const isActive = useMatch({ path: resolvedPath.pathname, end: true });
 		return (
-			<li className={ isActive ? "font-bold px-3 py-2 rounded-lg bg-green-100 text-green-800" : "font-bold px-3 py-2 text-slate-700 rounded-lg hover:bg-green-200 hover:text-green-800"}>
+			<li
+				className={
+					isActive
+						? "font-bold px-3 py-2 rounded-lg bg-green-100 text-green-800 m-1"
+						: "font-bold px-3 py-2 text-slate-700 rounded-lg hover:bg-green-200 hover:text-green-800 m-1"
+				}
+			>
 				<Link to={to}>{children}</Link>
 			</li>
 		);
