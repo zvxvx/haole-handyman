@@ -23,14 +23,16 @@ function App() {
 					<Route path="/testimonials" element={<Testimonials />} />
 				</Routes>
 			</div>
-			<footer className="w-full mt-2 flex items-center justify-center pb-2 text-md sm:text-center">
-				<span>{new Date().toLocaleString().slice(6, 10) + "/"}</span>
+			<footer className="w-full mt-2 items-center justify-center pb-2 text-sm sm:text-center text-emerald-900 font-bold">
+				<p>
+					{new Date().toLocaleString().slice(6, 10) + " | Haole Handyman LLC"}
+				</p>
 				<a
 					href="https://pappas.sh"
-					className="font-bold underline"
+					className=" underline decoration-emerald-800 decoration-2"
 					target="_blank"
 				>
-					pappas
+					~/p
 				</a>
 			</footer>
 		</div>
