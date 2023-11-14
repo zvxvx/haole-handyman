@@ -20,4 +20,4 @@ React, TailwindCSS, Vite, Vite Image Tools
 
 ## Preview
 
-<img src="./public/ghpreview.png" width="500" height="auto">
+<img src="./public/preview.png" width="500" height="auto">
