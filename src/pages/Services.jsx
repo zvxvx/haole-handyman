@@ -26,7 +26,7 @@ const Services = () => {
 					return <li>{service}</li>;
 				})}
 			</ul>
-			<div className="sm:grid gap-4 grid-cols-3 grid-rows-1 bg-green-100/50 border border-green-700 p-4 rounded shadow-xl mb-5">
+			<div className="sm:grid gap-4 grid-cols-3 grid-rows-1 bg-green-100/50 border border-green-300 p-4 rounded shadow-xl mb-5">
 				{images.map((image) => {
 					return (
 						<img className="border-2 border-black" src={image} alt="services" />
