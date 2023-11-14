@@ -2,7 +2,6 @@ import owners from "../assets/owners.png";
 
 const Home = () => {
 	const requestQuote = (e) => {
-		e.preventDefault();
 		const email = "haolehandymanllc@gmail.com";
 		const subject = "Hello, I would like to request a service quote.";
 		window.location.href = `mailto:${email}?subject=${encodeURIComponent(
