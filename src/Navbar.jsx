@@ -1,7 +1,7 @@
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 const Navbar = () => {
 	return (
-		<nav className="sm:max-w-2xl justify-center mx-auto bg-green-200/90 rounded-md mb-2 border border-green-500 shadow-md">
+		<nav className="sm:max-w-2xl justify-center mx-auto bg-green-100/60 rounded-md mb-2 border border-green-500 shadow-md">
 			<ul className="sm:flex sm:justify-center">
 				<CustomLink to="/">Home</CustomLink>
 				<CustomLink to="/services">Services</CustomLink>
