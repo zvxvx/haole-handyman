@@ -23,7 +23,7 @@ function App() {
 					<Route path="/testimonials" element={<Testimonials />} />
 				</Routes>
 			</div>
-			<footer className="w-full mt-2 items-center justify-center pb-2 text-sm sm:text-center text-emerald-900 font-bold">
+			<footer className="w-full mt-2 items-center justify-center pb-2 text-sm text-center text-emerald-900 font-bold">
 				<p>
 					{new Date().toLocaleString().slice(6, 10) + " | Haole Handyman LLC"}
 				</p>
