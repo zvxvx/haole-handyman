@@ -4,7 +4,6 @@ import Services from "./pages/Services";
 import Testimonials from "./pages/Testimonials";
 import { Route, Routes } from "react-router-dom";
 import logo from "./assets/logo.png";
-import bg from "./assets/bg.jpg";
 
 function App() {
 	return (
