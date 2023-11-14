@@ -8,7 +8,7 @@ import logo from "./assets/logo.png?w=250&h=250&format=webp";
 function App() {
 	return (
 		<div className="min-h-screen bg-gradient-to-t from-emerald-400 to-green-200">
-			<img src={logo} className="mx-auto my-auto mb-2" id="logo" alt="logo" />
+			<img src={logo} className="mx-auto my-auto p-2" id="logo" alt="logo" />
 			<Navbar />
 			<div className="sm:max-w-2xl flex-col mx-auto rounded-md shadow-xl items-center justify-center border border-green-500 bg-gradient-to-t from-green-200/50 to-green-100/50 p-6">
 				<Routes>
