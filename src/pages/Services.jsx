@@ -21,15 +21,15 @@ const Services = () => {
 			<p className="text-center uppercase tracking-wide text-xl text-green-900 font-bold mb-2">
 				Service examples include
 			</p>
-			<ul className="sm:flex gap-4 justify-center text-center font-bold mb-2">
+			<ul className="sm:flex gap-4 justify-center font-bold mb-2">
 				{services.map((service) => {
-					return <li>{service}</li>;
+					return <li className="border-b border-green-500 mb-1">{service}</li>;
 				})}
 			</ul>
 			<div className="sm:grid gap-4 grid-cols-3 grid-rows-1 bg-green-100/50 border border-green-300 p-4 rounded shadow-xl mb-5">
 				{images.map((image) => {
 					return (
-						<img className="border-2 border-black" src={image} alt="services" />
+						<img className="border-2 border-green-800 rounded mb-1" src={image} alt="services" />
 					);
 				})}
 			</div>
