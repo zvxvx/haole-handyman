@@ -21,22 +21,21 @@ const Home = () => {
 					<div className="uppercase tracking-wide text-lg text-green-800 font-bold">
 						About
 					</div>
-					<p className="bg-green-100 rounded-t-lg shadow-lg p-3">
+					<p className="bg-green-100/80 border border-green-400 rounded-lg shadow-lg p-3">
 						Brad, originally from Texas, moved here in 2019 and fell in love
 						with the island life. He cares about providing quality work and
 						customer service. Just as important is his belief in giving fair
 						prices to the residents of O'ahu.
-					</p>
-					<p className="bg-green-100 rounded-b-lg shadow-lg p-3">
-						His partner, Jaydi, was born on Kaua'i, but was raised on O'ahu.
-						You'll likely hear her voice on the other end when you give Ha'ole
-						Handyman a call. They complement each other well and look forward to
-						helping you on your next project!
+						<br />
+						<br /> His partner, Jaydi, was born on Kaua'i, but was raised on
+						O'ahu. You'll likely hear her voice on the other end when you give
+						Ha'ole Handyman a call. They complement each other well and look
+						forward to helping you on your next project!
 					</p>
 					<div className="uppercase tracking-wide text-lg text-green-800 font-bold mt-5">
 						Need a quote?
 					</div>
-					<div className="bg-green-100 rounded-lg shadow-lg p-3">
+					<div className="bg-green-100/80 border border-green-400 rounded-lg shadow-lg p-3">
 						Provide us with your name, a good phone number or email to respond
 						to, and a description of what service you'd like to request. The
 						more information you provide us, the more accurate the quote will
