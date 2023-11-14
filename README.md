@@ -1,2 +1,23 @@
 # Haole Handyman
-Currently refactoring [this business site](https://haolehandyman.com) I made into a React site.
+
+This is a website I made for a business associate that was looking to start advertising online. The website was originally made in HTML and CSS, but having learned React in the last week, I felt it was time for a complete overhaul. On top of that, I also decided to forgo my usual long stylesheets in favor of Tailwind, which I learned while refactoring the site. To be told, this ended up being a nice day project that I think turned out simple, yet effective.
+
+Check it out here: [Haole Handyman](https://haolehandyman.com)
+
+## Tools
+
+React, TailwindCSS, Vite, Vite Image Tools
+
+## Hosting
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d7753f92-48f3-4281-9e76-6b3eb318f627/deploy-status)](https://app.netlify.com/sites/gentle-truffle-cd88a3/deploys)
+
+## To Do List
+
+- [ ] Deconstruct logo to reduce vertical height
+- [ ] Consider making site wider until mobile breakpoint
+- [ ] May re-map images and list to blend in together, as it looks too separated in mobile-view.
+
+## Preview
+
+<img src="./public/preview.png" width="500" height="auto">
