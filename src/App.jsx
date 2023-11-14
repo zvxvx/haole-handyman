@@ -3,7 +3,7 @@ import Home from "./pages/Home";
 import Services from "./pages/Services";
 import Testimonials from "./pages/Testimonials";
 import { Route, Routes } from "react-router-dom";
-import logo from "./assets/logo.png?w=300&h=300&format=webp";
+import logo from "./assets/logo.png?w=250&h=250&format=webp";
 
 function App() {
 	return (
