@@ -14,7 +14,6 @@ React, TailwindCSS, Vite, Vite Image Tools
 
 ## To Do List
 
-- [ ] Deconstruct logo to reduce vertical height
 - [ ] Consider making site wider until mobile breakpoint
 - [ ] May re-map images and list to blend in together, as it looks too separated in mobile-view.
 
