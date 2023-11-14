@@ -45,7 +45,7 @@ const Home = () => {
 						<button
 							type="button"
 							onClick={requestQuote}
-							className="font-bold px-3 py-2 rounded-lg bg-green-200 text-green-800 border border-green-500 shadow-md mt-5 mx-auto block"
+							className="font-bold px-3 py-2 rounded-lg bg-green-300 text-slate-900 border border-green-500 shadow-md mt-5 mx-auto block"
 						>
 							Request Service Quote
 						</button>
