@@ -1,4 +1,4 @@
-import owners from "../assets/owners.png?w=400&h=400&format=webp";
+import owners from "../assets/owners.png?w=500&h=500&format=webp";
 
 const Home = () => {
 	const requestQuote = (e) => {
@@ -14,7 +14,12 @@ const Home = () => {
 				<img
 					className="drop-shadow-2xl mx-auto my-auto"
 					src={owners}
-					style={{ border: "2px solid  #0e6600", borderRadius: "50%" }}
+					style={{
+						border: "2px solid  #0e6600",
+						borderRadius: "50%",
+						width: "400px",
+						height: "400px",
+					}}
 					id="owners"
 					alt="Jadyi and Brad"
 				/>
