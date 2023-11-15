@@ -12,11 +12,6 @@ React, TailwindCSS, Vite, Vite Image Tools
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d7753f92-48f3-4281-9e76-6b3eb318f627/deploy-status)](https://app.netlify.com/sites/gentle-truffle-cd88a3/deploys)
 
-## To Do List
-
-- [ ] Consider making site wider until mobile breakpoint
-- [ ] May re-map images and list to blend in together, as it looks too separated in mobile-view.
-
 ## Preview
 
 <img src="./public/preview.png" width="500" height="auto">
