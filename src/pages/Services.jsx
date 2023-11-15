@@ -22,17 +22,23 @@ const Services = () => {
 				Service examples
 			</p>
 			<ul className="sm:flex grid grid-cols-2 gap-4 justify-center font-bold mb-2 text-center">
-				{services.map((service) => {
-					return <li className="border-b border-green-500 mb-1">{service}</li>;
+				{services.map((service, index) => {
+					return (
+						<li key={index} className="border-b border-green-500 mb-1">
+							{service}
+						</li>
+					);
 				})}
 			</ul>
-			<div className="sm:grid gap-4 grid-cols-3 bg-green-100/50 border border-green-300 p-4 rounded shadow-xl justify-items-center items-center">
-				{images.map((image) => {
+			<div className="sm:grid gap-4 grid-cols-2 bg-green-100/50 border border-green-300 p-4 rounded shadow-xl justify-items-center items-center">
+				{images.map((image, index) => {
 					return (
 						<img
+							key={index}
 							className="border-2 border-green-800 rounded mb-1"
 							src={image}
 							alt="services"
+							style={{ width: "550px" }}
 						/>
 					);
 				})}
