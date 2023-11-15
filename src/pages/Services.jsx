@@ -19,7 +19,7 @@ const Services = () => {
 	return (
 		<>
 			<p className="text-center uppercase tracking-wide text-xl text-green-900 font-bold mb-2">
-				Service examples include
+				Service examples
 			</p>
 			<ul className="sm:flex grid grid-cols-2 gap-4 justify-center font-bold mb-2 text-center">
 				{services.map((service) => {
