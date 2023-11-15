@@ -32,7 +32,7 @@ function App() {
 						{" "}
 						<a
 							href="https://pappas.sh"
-							className="decoration shadow-inner rounded bg-emerald-500 p-1 text-emerald-200"
+							className="decoration shadow-inner rounded bg-emerald-700 p-1 text-emerald-100"
 							target="_blank"
 						>
 							~p
