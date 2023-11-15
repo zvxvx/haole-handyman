@@ -7,7 +7,7 @@ import { Route, Routes } from "react-router-dom";
 function App() {
 	return (
 		<div className="min-h-screen bg-gradient-to-t from-emerald-400 to-green-200">
-			<div className="sm:max-w-2xl mx-auto px-2 pt-5">
+			<div className="sm:max-w-2xl mx-auto px-2 pt-2 sm:pt-4">
 				<ul className="flex justify-between font-bold uppercase text-green-900 text-xl sm:text-2xl">
 					<li>Haole Handyman</li>
 					<li>
@@ -23,17 +23,22 @@ function App() {
 					<Route path="/testimonials" element={<Testimonials />} />
 				</Routes>
 			</div>
-			<footer className="w-full mt-2 items-center justify-center pb-2 text-sm text-center text-emerald-900 font-bold">
-				<p>
-					{new Date().toLocaleString().slice(6, 10) + " | Haole Handyman LLC"}
-				</p>
-				<a
-					href="https://pappas.sh"
-					className=" underline decoration-emerald-800 decoration-2"
-					target="_blank"
-				>
-					~/p
-				</a>
+			<footer className="sm:max-w-2xl mx-auto px-1 pt-2 pb-1">
+				<ul className="flex justify-between font-bold uppercase text-green-900 text-xs">
+					<li className="pb-1">
+						{new Date().toLocaleString().slice(6, 10) + " | Haole Handyman LLC"}
+					</li>
+					<li>
+						{" "}
+						<a
+							href="https://pappas.sh"
+							className="decoration shadow-inner rounded bg-emerald-500 p-1 text-emerald-200"
+							target="_blank"
+						>
+							~p
+						</a>
+					</li>
+				</ul>
 			</footer>
 		</div>
 	);
