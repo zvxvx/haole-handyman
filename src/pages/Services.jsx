@@ -21,7 +21,7 @@ const Services = () => {
 			<p className="text-center uppercase tracking-wide text-xl text-green-900 font-bold mb-2">
 				Service examples include
 			</p>
-			<ul className="sm:flex gap-4 justify-center font-bold mb-2">
+			<ul className="sm:flex grid grid-cols-2 gap-4 justify-center font-bold mb-2 text-center">
 				{services.map((service) => {
 					return <li className="border-b border-green-500 mb-1">{service}</li>;
 				})}
