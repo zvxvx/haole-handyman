@@ -8,7 +8,7 @@ Check it out here: [Haole Handyman](https://haolehandyman.com)
 
 ## Tools
 
-React, React Router, TailwindCSS, Vite, Vite Image Tools
+React, React Router, Typescript, TailwindCSS, Vite, Vite Image Tools
 
 ## Hosting
 
