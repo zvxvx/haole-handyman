@@ -1,10 +1,9 @@
-import React from "react";
-import ac from "../assets/services/ac.jpg?w=550&h=700&format=webp";
-import door from "../assets/services/door.jpg?w=550&h=700&format=webp";
-import electrical from "../assets/services/electrical.jpg?w=550&h=700&format=webp";
-import flooring from "../assets/services/flooring.jpg?w=550&h=700&format=webp";
-import kitchen from "../assets/services/kitchen.jpg?w=550&h=700&format=webp";
-import toilet from "../assets/services/toilet.jpg?w=550&h=700&format=webp";
+import ac from "../assets/services/ac.jpg?w=550&h=700&format=webp&img";
+import door from "../assets/services/door.jpg?w=550&h=700&format=webp&img";
+import electrical from "../assets/services/electrical.jpg?w=550&h=700&format=webp&img";
+import flooring from "../assets/services/flooring.jpg?w=550&h=700&format=webp&img";
+import kitchen from "../assets/services/kitchen.jpg?w=550&h=700&format=webp&img";
+import toilet from "../assets/services/toilet.jpg?w=550&h=700&format=webp&img";
 
 const images = [ac, door, electrical, flooring, kitchen, toilet];
 const services = [

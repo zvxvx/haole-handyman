@@ -1,7 +1,8 @@
-import owners from "../assets/owners.png?w=500&h=500&format=webp";
+import { EventHandler, ReactEventHandler } from "react";
+import owners from "../assets/owners.png?w=500&h=500&format=webp&img";
 
 const Home = () => {
-	const requestQuote = (e) => {
+	const requestQuote = (e: React.MouseEvent) => {
 		const email = "haolehandymanllc@gmail.com";
 		const subject = "Hello, I would like to request a service quote.";
 		window.location.href = `mailto:${email}?subject=${encodeURIComponent(
