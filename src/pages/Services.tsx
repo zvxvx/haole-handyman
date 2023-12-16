@@ -37,7 +37,7 @@ const Services = () => {
 							className="border-2 border-green-800 rounded mb-1"
 							src={image}
 							alt="services"
-							style={{ width: "550px" }}
+							style={{ width: "100%", aspectRatio: "3/4" }}
 						/>
 					);
 				})}

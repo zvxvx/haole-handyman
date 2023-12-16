@@ -18,6 +18,8 @@ const Home = () => {
 					style={{
 						border: "2px solid  #0e6600",
 						borderRadius: "50%",
+						width: "50%",
+						aspectRatio: "1/1"
 					}}
 					id="owners"
 					alt="Jadyi and Brad"
