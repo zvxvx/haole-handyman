@@ -1,8 +1,10 @@
 # Haole Handyman
 
-This is a website I made for a business associate that was looking to start advertising online. The website was originally made in HTML and CSS, but having learned React in the last week, I felt it was time for a complete overhaul. On top of that, I also decided to forgo my usual long stylesheets in favor of Tailwind, which I learned while refactoring the site. To be told, this ended up being a nice day project that I think turned out simple, yet effective.
+[https://haolehandyman.com](https://haolehandyman.com)
 
-Check it out here: [Haole Handyman](https://haolehandyman.com)
+## PageSpeed Insights
+
+<img src="./public/speed.png" width="600" height="auto">
 
 ## Tools
 
@@ -14,4 +16,4 @@ React, React Router, Typescript, TailwindCSS, Vite, Vite Image Tools
 
 ## Preview
 
-<img src="./public/preview.png" width="500" height="auto">
+<img src="./public/preview.png" width="600" height="auto">
