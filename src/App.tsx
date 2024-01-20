@@ -26,10 +26,9 @@ function App() {
 			<footer className="sm:max-w-2xl mx-auto px-1 pt-2 pb-1">
 				<ul className="flex justify-between font-bold uppercase text-green-900 text-xs">
 					<li className="pb-1">
-						{new Date().toLocaleString().slice(6, 10) + " | Haole Handyman LLC"}
+						{new Date().toUTCString().slice(12, 16) + " | Haole Handyman LLC"}
 					</li>
 					<li>
-						{" "}
 						<a
 							href="https://pappas.sh"
 							className="decoration shadow-inner rounded bg-emerald-700 p-1 text-emerald-100"
