@@ -1,0 +1,18 @@
+---
+import Base from "../layouts/Base.astro";
+import Content from "../components/Content.astro";
+import Paragraph from "../components/Paragraph.astro";
+import Title from "../components/Title.astro";
+import {reviews} from "../reviews";
+---
+<Base title="Testimonials">
+    <Title title="Testimonials"/>
+    {reviews.map(({user, entry}) => 
+    <Content>
+        <Paragraph>
+          {entry}
+          <span class="uppercase font-bold"> - {user}</span></Paragraph>
+    </Content>
+    )}
+    <a href="https://www.yelp.com/biz/haole-handyman-aiea" target="_blank">More reviews at Yelp.</a>
+</Base>

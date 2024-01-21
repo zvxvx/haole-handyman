@@ -1,0 +1,21 @@
+---
+import Base from "../layouts/Base.astro";
+import Subject from "../components/Subtitle.astro";
+import Title from "../components/Title.astro";
+import {IMG_GALLERY} from "../gallery";
+import { Image } from "astro:assets";
+import Content from "../components/Content.astro";
+---
+<Base title="Services">
+    <Title title="Services"/>
+    <Content>
+    <ul class="grid sm:grid-cols-2 gap-4 px-4 pb-4">
+      {IMG_GALLERY.map(({alt, image}) =>
+        <li class="text-center rounded-lg">
+        <Subject title={alt}/>
+        <Image src={image} alt={alt} class="border border-2 border-green-700 rounded-lg shadow-xl" style={{ aspectRatio: "3/4" }}/>
+        </li>
+      )}
+    </ul>
+    </Content>
+</Base>

@@ -1,0 +1,44 @@
+---
+import Base from '../layouts/Base.astro';
+import { Image } from 'astro:assets';
+import owners from "../assets/owners.webp"
+import Paragraph from '../components/Paragraph.astro';
+import Content from "../components/Content.astro";
+import Subtitle from '../components/Subtitle.astro';
+import Button from '../components/Button.astro';
+---
+<Base title="Haole Handyman">
+		<Image src={owners} alt="owners" class="border-4 border-green-200 rounded-full shadow-xl w-96 mb-5" />
+		<div>
+			<Subtitle title="About"/>
+					<Content>
+						<Paragraph>
+							Brad, originally from Texas, moved here in 2019 and fell in love with the island life. He cares about providing quality work and customer service. Just as important is his belief in giving fair prices to the residents of O'ahu.
+						</Paragraph>
+							<Paragraph>
+								His partner, Jaydi, was born on Kaua'i, but was raised on O'ahu. You'll likely hear her voice on the other end when you give Ha'ole Handyman a call. They complement each other well and look forward to helping you on your next project!
+							</Paragraph>
+						</Content>
+		</div>
+		<div>
+			<Subtitle title="Need a quote?"/>
+						<Content>
+							<Paragraph>
+								Provide us with your name, a good phone number or email to respond to, and a description of what service you'd like to request. The more information you provide us, the more accurate the quote will be.
+							</Paragraph>
+							<Button buttonID="quote">Request Service Quote</Button>
+						</Content>
+		</div>
+			</Base>
+
+<script>
+const quote = document.getElementById("quote");
+quote?.addEventListener("click", handleEmail);
+function handleEmail() {
+	const email = "haolehandymanllc@gmail.com";
+  const subject = "Hello, I would like to request a service quote.";
+  window.location.href = `mailto:${email}?subject=${encodeURIComponent(
+    subject
+  )}`
+}
+</script>
