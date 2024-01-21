@@ -2,9 +2,9 @@ import type { ImageMetadata } from "astro";
 import ac from "./assets/gallery/ac.webp";
 import door from "./assets/gallery/door.webp";
 import electrical from "./assets/gallery/electrical.webp";
-import floor from "./assets/gallery/flooring.webp";
+import flooring from "./assets/gallery/flooring.webp";
 import kitchen from "./assets/gallery/kitchen.webp";
-import bathroom from "./assets/gallery/toilet.webp";
+import toilet from "./assets/gallery/toilet.webp";
 
 interface GalleryProps {
   alt: string;
@@ -31,8 +31,8 @@ export const IMG_GALLERY: GalleryProps[] = [
   },
   {
     alt: "Flooring",
-    image: floor,
-    full: "floor.jpg",
+    image: flooring,
+    full: "flooring.jpg",
   },
   {
     alt: "Kitchen",
@@ -41,7 +41,7 @@ export const IMG_GALLERY: GalleryProps[] = [
   },
   {
     alt: "Bathroom",
-    image: bathroom,
-    full: "bathroom.jpg",
+    image: toilet,
+    full: "toilet.jpg",
   },
 ];
