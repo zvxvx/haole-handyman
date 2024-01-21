@@ -10,11 +10,11 @@ export const links: LinkTypes[] = [
     title: "Home",
   },
   {
-    path: "/services",
+    path: "/services/",
     title: "Services",
   },
   {
-    path: "/testimonials",
+    path: "/testimonials/",
     title: "Testimonials",
   },
   {

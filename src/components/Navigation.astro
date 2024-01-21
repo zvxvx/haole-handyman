@@ -1,11 +1,11 @@
 ---
 import {links} from "../links";
 const {pathname} = Astro.url;
-const isActive = 'border-b-4 border-green-800';
+const isActive : string = 'border-b-4 border-green-800';
 ---
   <nav class="flex gap-4 justify-center p-4 text-green-900 bg-green-200 border border-green-600 rounded text-lg uppercase font-bold mb-2">
     {links.map(({path, title}) =>
-      <a href={path} class={path === pathname ? isActive : ''}>{title}
+      <a href={path} class={`${path === pathname && isActive}`}>{title}
       </a>
     )}
   </nav>
