@@ -4,7 +4,7 @@
 
 ## Tools
 
-Astro, Typescript
+Astro, Typescript, Tailwind
 
 ## Hosting
 
