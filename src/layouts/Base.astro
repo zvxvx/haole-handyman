@@ -6,6 +6,8 @@ interface Props {
 const { title } = Astro.props;
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+const ROOT_STYLE = "min-h-dvh max-w-3xl mx-auto bg-gradient-to-b from-emerald-200 to-emerald-500 px-2";
+const CONTENT_STYLE = "flex flex-col items-center bg-gradient-to-b from-green-200 to-emerald-400 border border-green-600 rounded shadow-xl p-4";
 ---
 
 <!doctype html>
@@ -18,9 +20,9 @@ import Footer from '../components/Footer.astro';
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class="min-h-dvh max-w-3xl mx-auto bg-gradient-to-b from-emerald-200 to-emerald-500 px-2">
+	<body class={ROOT_STYLE}>
 		<Header/>
-		<div class="flex flex-col items-center bg-gradient-to-b from-green-200 to-emerald-400 border border-green-600 rounded shadow-xl p-4">
+		<div class={CONTENT_STYLE}>
 			<slot />
 		</div>
 		<Footer/>
