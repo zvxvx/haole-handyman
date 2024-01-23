@@ -12,7 +12,7 @@ const options = {
   method: 'GET',
   headers: {
     accept: 'application/json',
-    Authorization: import.meta.env.VITE_YELP
+    Authorization: import.meta.env.SECRET_YELP
   }
 };
 const response = await fetch ('https://api.yelp.com/v3/businesses/haole-handyman-aiea/reviews?locale=en_US&limit=20&sort_by=newest', options);
@@ -31,10 +31,10 @@ interface reviewTypes {
 ---
 <Base title="Testimonials">
     <Title title="Testimonials"/>
+    <ul>
     {reviews.map(({text, url, rating, time_created, user: {name}} : reviewTypes) => 
     <Content>
         <a href={url}>
-          <ul>
             <Paragraph>
               <li class={YELP_STYLE}>{time_created.slice(0,10)}</li>
               <li class="italic">{text}</li>
@@ -43,9 +43,9 @@ interface reviewTypes {
                 <span class={YELP_STYLE}>{name}</span>
               </li>
             </Paragraph>
-          </ul>
         </a>
     </Content>
     )}
+    </ul>
     <a href="https://www.yelp.com/biz/haole-handyman-aiea" target="_blank" class="uppercase font-bold">More reviews at Yelp.</a>
 </Base>
