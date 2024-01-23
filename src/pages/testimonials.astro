@@ -3,16 +3,49 @@ import Base from "../layouts/Base.astro";
 import Content from "../components/Content.astro";
 import Paragraph from "../components/Paragraph.astro";
 import Title from "../components/Title.astro";
-import {reviews} from "../reviews";
+
+const YELP_STYLE = "uppercase font-bold italic text-xl";
+const stars = "⭐";
+
+const Y_KEY = import.meta.env.SECRET_YELP;
+
+const options = {
+  method: 'GET',
+  headers: {
+    accept: 'application/json',
+    Authorization: Y_KEY
+  }
+};
+const response = await fetch ('https://api.yelp.com/v3/businesses/haole-handyman-aiea/reviews?locale=en_US&limit=20&sort_by=newest', options);
+const data = await response.json();
+const reviews = data.reviews;
+
+interface reviewTypes {
+  text: string;
+  url: string;
+  rating: number;
+  time_created: string;
+  user: {
+    name: string;
+  }
+}
 ---
 <Base title="Testimonials">
     <Title title="Testimonials"/>
-    {reviews.map(({user, entry}) => 
+    {reviews.map(({text, url, rating, time_created, user: {name}} : reviewTypes) => 
     <Content>
-        <Paragraph>
-          {entry}
-          <span class="uppercase font-bold"> - {user}</span>
-        </Paragraph>
+        <a href={url}>
+          <ul>
+            <Paragraph>
+              <li class={YELP_STYLE}>{time_created.slice(0,10)}</li>
+              <li class="italic">{text}</li>
+              <li class="flex justify-between items-center">
+                <span>{stars.repeat(rating)}</span>
+                <span class={YELP_STYLE}>{name}</span>
+              </li>
+            </Paragraph>
+          </ul>
+        </a>
     </Content>
     )}
     <a href="https://www.yelp.com/biz/haole-handyman-aiea" target="_blank" class="uppercase font-bold">More reviews at Yelp.</a>
