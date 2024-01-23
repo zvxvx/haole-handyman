@@ -31,21 +31,19 @@ interface reviewTypes {
 ---
 <Base title="Testimonials">
     <Title title="Testimonials"/>
-    <ul>
     {reviews.map(({text, url, rating, time_created, user: {name}} : reviewTypes) => 
     <Content>
         <a href={url}>
             <Paragraph>
-              <li class={YELP_STYLE}>{time_created.slice(0,10)}</li>
-              <li class="italic">{text}</li>
-              <li class="flex justify-between items-center">
+              <p class={YELP_STYLE}>{time_created.slice(0,10)}</p>
+              <p class="italic">{text}</p>
+              <div class="flex justify-between items-center">
                 <span>{stars.repeat(rating)}</span>
                 <span class={YELP_STYLE}>{name}</span>
-              </li>
+              </div>
             </Paragraph>
         </a>
     </Content>
     )}
-    </ul>
     <a href="https://www.yelp.com/biz/haole-handyman-aiea" target="_blank" class="uppercase font-bold">More reviews at Yelp.</a>
 </Base>
